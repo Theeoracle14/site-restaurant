@@ -375,7 +375,7 @@ footer ul li a {
     }
 
     nav {
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         font-size: 14px;
@@ -394,8 +394,8 @@ footer ul li a {
     }
 
     .cta {
-        width: 120px;
-        font-size: 12px;
+        width: 200px;
+        font-size: 14px;
     }
 
     .header-content {
@@ -405,12 +405,13 @@ footer ul li a {
 
     .le_restaurant {
         max-width: 100%;
-        height: 80vh;
+        height: auto;
         margin: auto;
         margin-top: 200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 48px;
     }
 
     .le_restaurant img {
