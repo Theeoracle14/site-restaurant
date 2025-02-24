@@ -358,7 +358,7 @@ footer ul li a {
 
 /* Responsive adjustments */
 
-@media (max-width: 730px) {
+@media (max-width: 580px) {
     body {
         font-size: 16px;
         overflow-x: hidden;
@@ -395,7 +395,7 @@ footer ul li a {
 
     .cta {
         width: 200px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .header-content {
@@ -407,13 +407,15 @@ footer ul li a {
         max-width: 100%;
         height: auto;
         margin: auto;
-        margin-top: 200px;
+        margin-top: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 48px;
+        margin-bottom: 96px;
     }
-
+    .le_restaurant div{
+        padding-bottom: 48px;
+    }
     .le_restaurant img {
         width: 60%;
         height: 60%;
@@ -428,7 +430,7 @@ footer ul li a {
     .saveurs h2,
     .le_chef h2,
     .le_restaurant h2 {
-        font-size: 45px;
+        font-size: 25px;
     }
     footer,
     .horaires_texte p,
