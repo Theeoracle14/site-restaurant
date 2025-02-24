@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le restaurant</title>
+    <link rel="stylesheet" href="./style/homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./sources/image/logo_resto.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="video-container">
+        <video autoplay muted loop playsinline>
+          <source
+            src="sources/vid/mixkit-waiter-serving-meat-stew-in-a-restaurant-4672-full-hd.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Navbar and content on top of the video -->
+        <nav>
+          <a href="./homepage.html"
+            ><img src="./sources/image/SVG/Fichier 1.svg" alt="Restaurant Logo"
+          /></a>
+          <ul>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+          <a href="./reservation.html"
+            ><button class="cta">Reservez maintenant</button></a
+          >
+        </nav>
+        <div class="header-content">
+          <h1>Bienvenue chez <br />Restaurant</h1>
+          <a href="./reservation.html"
+            ><button class="cta">Reservez maintenant</button></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="le_restaurant">
+        <img
+          src="./sources/image/kayleigh-harrington-yhn4okt6ci0-unsplash.jpg"
+          alt="Inside the restaurant"
+        />
+        <div>
+          <h2>Le Restaurant</h2>
+          <p>
+            Restaurant situé en plein centre-ville de Rouen, vous accueille dans
+            une ambiance familiale et conviviale. Son cadre très traditionnel
+            vous plonge dans l'univers normand, mêlant charme d’antan et touches
+            de modernité. La décoration, empreinte d’authenticité avec ses
+            boiseries et ses éléments rustiques, vous transporte au cœur du
+            terroir normand. Notre chef passionné y propose une cuisine
+            raffinée, mettant en valeur les produits locaux et les recettes
+            traditionnelles, pour offrir à vos papilles une expérience culinaire
+            inoubliable..
+          </p>
+          <a href="./reservation.html"
+            ><button class="contact">Rendez-vous chez nous</button></a
+          >
+        </div>
+      </section>
+
+      <section class="le_chef">
+        <div class="chef">
+          <h2>Un Chef Passionné et Une Équipe Accueillante</h2>
+          <p>
+            Notre chef, véritable amoureux de la cuisine, met tout son
+            savoir-faire au service de votre palais. Accompagné d’une équipe
+            dévouée et accueillante, il vous invite à découvrir des plats
+            préparés avec passion et créativité.
+          </p>
+          <a href="./"><button class="hotes">Les hôtes</button></a>
+        </div>
+        <img src="./sources/image/chef.jpg" alt="Chef at work" />
+      </section>
+
+      <section class="saveurs">
+        <h2>Nos saveurs</h2>
+        <p>
+          Que vous soyez amateur de viande, de poisson ou de plats végétariens,
+          notre carte saura ravir vos papilles avec des produits frais et
+          locaux.
+        </p>
+
+        <div class="saveurs_img">
+          <img src="./sources/image/saveurs/1.jpg" alt="Poisson" />
+          <img src="./sources/image/saveurs/2.jpg" alt="Steak" />
+          <img src="./sources/image/saveurs/3.jpg" alt="Gâteau" />
+        </div>
+        <div class="carousel">
+          <div class="carousel-inner">
+            <img src="./sources/image/saveurs/1.jpg" alt="Poisson" />
+            <img src="./sources/image/saveurs/2.jpg" alt="Steak" />
+            <img src="./sources/image/saveurs/3.jpg" alt="Gâteau" />
+          </div>
+          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <button class="button_saveurs">Découvrir nos saveurs</button>
+      </section>
+
+      <section class="horaires">
+        <div class="horaires_texte">
+          <h3>Nos horaires :</h3>
+          <div class="liste">
+            <ul>
+              <li>Lundi : 11h-14h et 19h-23h</li>
+              <li>Mardi : 11h-14h et 19h-23h</li>
+              <li>Mercredi : 11h-14h et 19h-23h</li>
+              <li>Jeudi : Ouvert 24h/24</li>
+              <li>Vendredi : 11h-14h et 19h-23h</li>
+              <li>Samedi : 11h-14h et 19h-23h</li>
+              <li>Dimanche : 11h-14h et 19h-23h</li>
+            </ul>
+          </div>
+          <a href="./reservation.html"
+            ><button class="cta">Reservez maintenant</button></a
+          >
+        </div>
+        <div class="horaires_img">
+          <img
+            src="./sources/image/patrick-tomasso-GXXYkSwndP4-unsplash.jpg"
+            alt="Restaurant interior"
+          />
+        </div>
+
+        <div class="back-to-top">
+          <a href="#header">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <ul>
+          <li><a href="lieux.html">Le lieu</a></li>
+          <li><a href="#Les_hotes">Les hôtes</a></li>
+          <li><a href="#Des_saveurs">Des saveurs</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <a href="#"
+          ><img src="./sources/image/SVG/Fichier 1.svg" alt="Restaurant Logo"
+        /></a>
+      </div>
+      <ul>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-tiktok"></i></li>
+      </ul>
+      <p>
+        Mentions légales - CGV – Politique de Confidentialité <br />
+        © 2024 Le restaurant – Tous droits réservés
+      </p>
+    </footer>
+    <script>
+      let currentIndex = 0;
+
+      function moveSlide(direction) {
+        const carouselInner = document.querySelector(".carousel-inner");
+        const totalSlides = document.querySelectorAll(
+          ".carousel-inner img"
+        ).length;
+        currentIndex += direction;
+
+        if (currentIndex < 0) {
+          currentIndex = totalSlides - 1; // Go to the last slide
+        } else if (currentIndex >= totalSlides) {
+          currentIndex = 0; // Go to the first slide
+        }
+
+        const offset = -currentIndex * 100;
+        carouselInner.style.transform = `translateX(${offset}%)`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style/reservation.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./homepage.html"><img src="./sources/image/SVG/Fichier 1.svg" alt="Restaurant Logo"></a>
+            <ul class="nav-list">
+                <li><a href="lieux.html">Le lieu</a></li>
+                <li><a href="#Les hôtes">Les hôtes</a></li>
+                <li><a href="#Des saveurs">Des saveurs</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <a href="reservation.html"><button class="cta">Reservez maintenant</button></a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <video class="video-background" autoplay muted loop playsinline>
+            <source src="sources/vid/6011721_Person_People_1920x1080.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h1>Reservation chez Le Restaurant</h1>
+
+        <div class="form">
+            <form id="reservationForm">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Numero téléphone</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Date de réservation</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">L'heure</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Nombre de personnes</label>
+                <select id="guests" name="guests" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="autre">autre</option>
+                </select>
+
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </div>
+
+        <p id="confirmationMessage" style="text-align: center;"></p>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#lieux.html">Le lieu</a></li>
+                <li><a href="#Les hôtes">Les hôtes</a></li>
+                <li><a href="#Des saveurs">Des saveurs</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+
+            <a href="./homepage.html"><img src="./sources/image/SVG/Fichier 1.svg" alt=""></a>
+        </div>
+        <ul>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-tiktok"></i></li>
+        </ul>
+        <p>
+            Mention legales - CGV – Politique de Confidentialité
+
+            © 2024 Le restaurant – Tous droits réservés 
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('reservationForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const guests = document.getElementById('guests').value;
+
+            const message = `Reservation confirmed!\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nDate: ${date}\nTime: ${time}\nGuests: ${guests}`;
+            document.getElementById('confirmationMessage').innerText = message;
+        });
+    </script>
+
+</body>
+
+</html>

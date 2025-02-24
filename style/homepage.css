@@ -1,0 +1,653 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+
+}
+
+body {
+    background-color: #2E1900;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Full height of the viewport */
+    overflow: hidden;
+}
+
+/* Video styling to cover the entire header background */
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    /* Puts the video behind the content */
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    /* Ensures the video covers the entire background */
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 140px;
+}
+
+nav img {
+    width: 140px;
+    height: 80px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.cta {
+    width: fit-content;
+    height: 35px;
+    color: white;
+    background-color: #2E1900;
+    border: #F39323 solid;
+    border-radius: 10px;
+}
+
+.cta:hover {
+    color: black;
+    border: #2E1900 solid;
+    background-color: #F39323;
+    animation: pulse 1s infinite;
+    /* Apply the pulse animation */
+}
+
+/* Keyframes for the pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        /* Initial size */
+    }
+
+    50% {
+        transform: scale(1.1);
+        /* Grows to 10% larger */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Returns to original size */
+    }
+}
+
+.header-content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Centers the content vertically */
+    color: white;
+    z-index: 1;
+    width: 400px;
+
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.le_restaurant {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 70%;
+    
+    padding: auto;
+    margin: auto;
+    margin-bottom: 96px;
+}
+
+.le_restaurant img {
+    width: 50%;
+    height: 500px;
+    padding: auto;
+    margin-top: 96px;
+}
+
+.le_restaurant div {
+    width: 500px;
+    color: white;
+    padding: auto;
+    margin: auto;
+}
+
+h2 {
+    font-size: 50px;
+    padding: auto;
+    margin-bottom: 24px;
+}
+
+p {
+    font-size: 20px;
+    padding: auto;
+    margin-bottom: 24px;
+}
+
+.contact {
+    width: fit-content;
+    height: 35px;
+    border: none;
+    color: #2E1900;
+    border-radius: 10px;
+    background-color: #F39323;
+}
+
+.le_chef {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 70%;
+    padding: auto;
+    margin: auto;
+    border: #F39323 solid;
+    border-radius: 10px;
+}
+
+.chef {
+    width: 500px;
+    color: white;
+    padding: auto;
+    margin: auto;
+}
+
+.le_chef img {
+    width: 30%;
+    height: 500px;
+    padding: auto;
+    margin-top: 96px;
+    padding-bottom: 96px;
+}
+
+.button_saveurs,
+.hotes {
+    color: rgb(255, 255, 255);
+    border: #F39323 solid;
+    border-radius: 10px;
+    background-color: #2E1900;
+    width: fit-content;
+    height: 35px;
+}
+
+.hotes:hover {
+    color: black;
+    border: #2E1900 solid;
+    background-color: #F39323;
+    animation: pulse 1s infinite;
+    /* Apply the pulse animation */
+}
+
+.saveurs {
+    width: 80%;
+    color: white;
+    align-items: center;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    padding-top: 96px;
+    padding-bottom: 100px;
+}
+
+.saveurs p {
+    width: 70%;
+    padding-bottom: 24px;
+}
+
+.saveurs div {
+    width: 1000px;
+}
+
+.saveurs_img {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: auto;
+    margin-left: 50px;
+
+}
+
+.saveurs_img img {
+    width: 380px;
+    height: 330px;
+    margin: auto;
+    padding: auto;
+    padding-bottom: 48px;
+}
+
+.carousel {
+    display: none;
+}
+
+.horaires {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 70%;
+    padding: auto;
+    margin: auto;
+    color: white;
+    margin-bottom: 96px;
+}
+
+.liste ul {
+    padding: 24px;
+}
+
+.horaires h3 {
+    font-size: 40px;
+    padding: 24px;
+}
+
+.horaires ul li {
+    font-size: 20px;
+
+}
+
+.horaires_img {
+    width: 50%;
+    height: 500px;
+    padding: auto;
+    margin-top: 96px;
+    padding-bottom: 96px;
+}
+
+.horaires img {
+    width: 100%;
+    height: 500px;
+}
+
+.back-to-top {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+}
+
+.back-to-top a {
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #693900;
+    border-radius: 5px;
+    text-decoration: none;
+    /* nom | durée | fonction | retard */
+    transition: background-color 0.2s ease-in-out 0s, border 0.5s ease-in-out 0s;
+}
+
+.back-to-top a:hover {
+    background-color: #F39323;
+    color: #2E1900;
+}
+
+
+.back-to-top i {
+    color: #F39323;
+    font-size: 1rem;
+}
+
+.back-to-top i:hover {
+    color: #2E1900;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #693900;
+    color: white;
+    padding: 96px;
+    text-align: center;
+}
+
+footer img {
+    width: 140px;
+    height: 80px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 48px;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 20px;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 1000px) {
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 100%;
+        height: 600px;
+    }
+
+    nav {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        margin: auto;
+    }
+
+    nav img {
+        width: 100px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        width: 50%;
+    }
+
+    .cta {
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .header-content {
+        width: 80%;
+        padding-left: 50px;
+    }
+
+    .le_restaurant {
+        max-width: 100%;
+        height: 80vh;
+        margin: auto;
+        margin-top: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .le_restaurant img {
+        width: 60%;
+        height: 60%;
+        margin: auto;
+    }
+
+    .le_chef {
+        width: 95%;
+        height: 90vh;
+    }
+    .horaires_texte h2,
+    .saveurs h2,
+    .le_chef h2,
+    .le_restaurant h2 {
+        font-size: 45px;
+    }
+    footer,
+    .horaires_texte p,
+    .saveurs p,
+    .le_chef p,
+    .le_restaurant p {
+        font-size: 18px;
+    }
+
+    .chef {
+        width: 100%;
+        margin: auto;
+        padding-left: 40px;
+    }
+
+    .le_chef img {
+        width: 80%;
+        height: 80%;
+        padding-right: 40px;
+    }
+
+    .saveurs {
+        display: block;
+        background: #5e3f3f;
+        width: 100%;
+        margin: auto;
+    }
+
+    .saveurs_img {
+  
+        width: 70%;
+        gap: 5px;
+        gap: -25px;
+        margin: auto;
+        padding-right: 20px;
+    }
+
+    .saveurs_img img {
+        max-width: 30%;
+    }
+    .horaires{
+        width: 100%;
+        overflow: hidden;
+    }
+    .horaires_img{
+        width: 50%;
+        height: 100%;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: auto;
+        padding: auto;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        height: 700px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .video-container video {
+        width: 50%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header .header-content h1 {
+        font-size: 36px;
+    }
+
+    main {
+        margin-top: 240px;
+    }
+
+    main h1 {
+        font-size: 50px;
+    }
+
+    main h2 {
+        font-size: 40px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    main img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .le_restaurant {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .le_restaurant img {
+        width: auto;
+    }
+
+    .le_restaurant p {
+        font-size: 16px;
+    }
+
+    .le_chef {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .chef {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: auto;
+        padding-top: 48px;
+        width: 90%;
+        text-align: start;
+    }
+
+
+    .le_chef img {
+        border-radius: 1rem;
+        margin: auto;
+        width: min-content;
+    }
+
+    .saveurs {
+        max-width: 100%;
+        /* Prevents the element from exceeding the viewport width */
+        max-height: 100%;
+        /* Prevents the element from exceeding the viewport height */
+        overflow: hidden;
+        /* Hides overflowing content */
+    }
+
+    .saveurs_img {
+        display: none;
+    }
+
+    .carousel {
+        display: block;
+        position: relative;
+        width: 80%;
+        max-width: fit-content;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 70%;
+        /* Total width for 3 slides */
+        ;
+    }
+
+    .carousel-inner img {
+        width: 50%;
+        flex-shrink: 0;
+    }
+
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .button_saveurs {
+        margin-top: 48px;
+    }
+
+    .horaires {
+        width: 100%;
+    }
+
+    .horaires_texte {
+        margin: auto;
+        padding-left: 100px;
+        width: fit-content;
+    }
+
+    .horaires_img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .horaires_img img {
+        min-width: 100%;
+
+        border-radius: 25px;
+        padding-right: 200px;
+    }
+}
