@@ -423,8 +423,8 @@ footer ul li a {
     }
 
     .le_chef {
-        width: 95%;
-        height: 90vh;
+        width: 90%;
+        height: auto;
     }
     .horaires_texte h2,
     .saveurs h2,
@@ -444,18 +444,19 @@ footer ul li a {
         width: 100%;
         margin: auto;
         padding-left: 40px;
+        padding-bottom: 96px;
     }
 
     .le_chef img {
         width: 80%;
         height: 80%;
-        padding-right: 40px;
+        padding-bottom: 48px;
     }
 
     .saveurs {
         display: block;
         background: #5e3f3f;
-        width: 100%;
+        width: 80%;
         margin: auto;
     }
 
@@ -469,7 +470,7 @@ footer ul li a {
     }
 
     .saveurs_img img {
-        max-width: 30%;
+        width: 300px;
     }
     .horaires{
         width: 100%;
